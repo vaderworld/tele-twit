@@ -1,5 +1,4 @@
 import tweepy
-
 from twitter import config
 
 
@@ -18,4 +17,4 @@ class TwitterInteractor:
 
     @staticmethod
     def format_tweet(tweet):
-        return '{} at {} ---- {}'.format(tweet.author.name, tweet.created_at, tweet.text)
+        return '{} at {}\n{}'.format(tweet.author.name, tweet.created_at, tweet.text)
